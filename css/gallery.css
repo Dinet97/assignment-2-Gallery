@@ -1,0 +1,42 @@
+.thumbnail:not(:hover) {
+    filter: grayscale(100%);
+}
+
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Center the main image */
+figure {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Style the thumbnails */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style the active thumbnail */
+li.active {
+    border-color: #333;
+    filter: grayscale(0%);
+}
+
+/* Style the inactive thumbnails */
+li:not(.active) {
+    filter: grayscale(100%);
+}
+
